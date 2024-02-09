@@ -1,11 +1,13 @@
 local M = {
-	"rose-pine/neovim",
-	lazy = false,
-	priority = 1000,
+  "ellisonleao/gruvbox.nvim",
+  lazy = false,
+  priority = 1000,
+  opts = {},
 }
 
 function M.config()
-	vim.cmd.colorscheme "rose-pine"
+   vim.o.background = "dark" -- or "light" for light mode
+   vim.cmd([[colorscheme gruvbox]])
 end
 
 return M

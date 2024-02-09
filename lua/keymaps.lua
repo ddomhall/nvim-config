@@ -13,18 +13,6 @@ end)
 
 vim.keymap.set("n", "<leader>gs", vim.cmd.Git)
 
--- harpoon keymaps
-
-local mark = require("harpoon.mark")
-local ui = require("harpoon.ui")
-local term = require("harpoon.term")
-
-vim.keymap.set("n", "<leader>e", ui.toggle_quick_menu)
-vim.keymap.set("n", "<leader>a", mark.add_file)
-vim.keymap.set("n", "<C-j>", ui.nav_next)
-vim.keymap.set("n", "<C-k>", ui.nav_prev)
-vim.keymap.set("n", "<C-t>", function() term.gotoTerminal(1) end)
-
 -- undotree keymaps
 
 vim.keymap.set("n", "<leader>u", vim.cmd.UndotreeToggle)
@@ -37,6 +25,3 @@ vim.keymap.set("n", "<leader>vca", vim.lsp.buf.code_action)
 vim.keymap.set("n", "<leader>vrr", vim.lsp.buf.references)
 vim.keymap.set("n", "<leader>vrn", vim.lsp.buf.rename)
 
--- gen keymaps
-
-vim.keymap.set('v', '<leader>ia', ':Gen<CR>')
