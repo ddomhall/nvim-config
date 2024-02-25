@@ -3,9 +3,9 @@ vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 -- telescope keymaps
 
 local builtin = require("telescope.builtin")
-vim.keymap.set("n", "<C-g>", builtin.git_files)
+vim.keymap.set('n', '<C-g>', builtin.live_grep)
 vim.keymap.set('n', '<leader>?', builtin.oldfiles)
-vim.keymap.set('n', '<leader>sg', builtin.live_grep)
+vim.keymap.set("n", "<leader>sg", builtin.git_files)
 vim.keymap.set("n", "<leader>sf", builtin.find_files)
 
 -- fugitive keymaps
