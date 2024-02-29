@@ -12,6 +12,7 @@ spec("plugin.autopairs")
 spec("plugin.which-key")
 spec("plugin.lualine")
 spec("plugin.gitsigns")
+spec("plugin.conform")
 
 require "plugin.lazy"
 require "keymaps"
